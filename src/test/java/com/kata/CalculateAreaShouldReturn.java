@@ -13,6 +13,9 @@ import static org.hamcrest.CoreMatchers.is;
 /*
  * Fixed the violation but introce an OCP violation. Add a new shape requires a new statement
  * look for instanceOf code smell
+ * Whenever you have an if statement that implements particular behavior according to object type
+ * there is an LSP violation smell. Another would be a partial implementation of the class with a method throwing
+ * an exception for instance.
  */
 public class CalculateAreaShouldReturn {
 
