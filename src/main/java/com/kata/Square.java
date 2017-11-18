@@ -1,28 +1,18 @@
 package com.kata;
 
-public class Square extends Rectangle {
+/*
+ * It should be possible to set the height and the width of a rectangle independently.
+ * This extension violates that rule.
+ */
+public class Square extends Shape {
 
-    private int height;
-    private int width;
+    private int sideLength;
 
-    @Override
-    public int getWidth() {
-        return width;
+    public Square(int sideLength) {
+        this.sideLength = sideLength;
     }
 
-    @Override
-    public void setWidth(int width) {
-        this.height = width;
-        this.width = width;
-    }
-
-    public int getHeight() {
-        return height;
-    }
-
-    @Override
-    public void setHeight(int height) {
-        this.height = height;
-        this.width = height;
+    public int area() {
+        return sideLength * sideLength;
     }
 }

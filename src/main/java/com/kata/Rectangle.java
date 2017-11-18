@@ -1,9 +1,14 @@
 package com.kata;
 
-public class Rectangle {
+public class Rectangle extends Shape{
 
     int height;
     int width;
+
+    public Rectangle (int height, int width) {
+        this.height = height;
+        this.width = width;
+    }
 
     public int getHeight() {
         return height;
@@ -19,5 +24,9 @@ public class Rectangle {
 
     public void setWidth(int width) {
         this.width = width;
+    }
+
+    public int area() {
+        return height * width;
     }
 }
